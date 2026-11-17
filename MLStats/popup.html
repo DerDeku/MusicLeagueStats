@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <h1>MLStats</h1>
+  <div class="row">
+    <button id="scrape">League analysieren</button>
+    <button id="debug" class="secondary" title="Aktuelle Seite als HTML speichern">Debug-HTML</button>
+  </div>
+  <p id="status"></p>
+
+  <section id="result" hidden>
+    <p id="meta"></p>
+    <label>Ich bin:
+      <select id="me"></select>
+    </label>
+    <table>
+      <thead>
+        <tr>
+          <th>Person</th>
+          <th title="Punkte, die die Person mir gegeben hat">→ mir</th>
+          <th title="Anzahl Stimmen an mich">#</th>
+          <th title="Punkte, die ich der Person gegeben habe">von mir →</th>
+          <th title="Anzahl Stimmen von mir">#</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <div class="row">
+      <button id="csv" class="secondary">CSV Übersicht</button>
+      <button id="csv-detail" class="secondary">CSV alle Songs</button>
+    </div>
+  </section>
+
+  <script src="popup.js"></script>
+</body>
+</html>

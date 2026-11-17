@@ -1,0 +1,13 @@
+body { font: 13px system-ui, sans-serif; width: 440px; margin: 10px; }
+h1 { font-size: 16px; margin: 0 0 8px; }
+.row { display: flex; gap: 6px; }
+button { padding: 5px 10px; cursor: pointer; border: 0; border-radius: 4px; background: #6b2fd6; color: #fff; }
+button.secondary { background: #ddd; color: #222; }
+button:disabled { opacity: .5; cursor: default; }
+#status { color: #555; min-height: 1em; }
+#status.error { color: #b00; }
+select { margin-left: 4px; }
+table { width: 100%; border-collapse: collapse; margin: 8px 0; }
+th, td { padding: 3px 5px; border-bottom: 1px solid #eee; text-align: right; }
+th:first-child, td:first-child { text-align: left; }
+th { cursor: pointer; background: #f5f5f5; }

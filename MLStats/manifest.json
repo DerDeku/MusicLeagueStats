@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "MLStats - Music League Vote Stats",
+  "version": "0.1.0",
+  "description": "Wertet aus, wer dir in einer Music League wie viele Punkte gegeben hat - und umgekehrt.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["https://app.musicleague.com/*"],
+  "action": {
+    "default_title": "MLStats",
+    "default_popup": "popup.html"
+  }
+}
